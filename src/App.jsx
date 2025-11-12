@@ -136,7 +136,7 @@ const App = () => {
             <p>Strength: {fighter.strength}</p>
             <p>Agility: {fighter.agility}</p>
             <p>Price: {fighter.price}</p>
-            <button onClick={() => handleAddFighter(fighter)}>Add</button>
+            <button disabled={fighter.price > money} onClick={() => handleAddFighter(fighter)}>Add</button>
           </li>
         ))}
       </ul>
